@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #CEDF9F;
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    background-image: url(bg.jfif);
+    background-size: cover;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1 rem rgba(0, 0, 0, 3);
+    font-size: 8vmin;
+    color: #55AD9B;
+    background-color: #F1F3C2;
+}
+
+#reset {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #86AB89;
+    color: beige;
+    border-radius: 1rem;
+    border: none;
+}
+#new-game {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #86AB89;
+    color: beige;
+    border-radius: 1rem;
+    border: none;
+}
+#win {
+    color: #fffc7f;
+    font-size: 5vmin;
+}
+.message{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{
+    display: none;
+}
+h1{
+    color: #748E63;
+}
+img{
+    height: 100px;
+    width: 140px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        height: 90vh;
+        gap: 2vmin;
+    }
+
+    .game {
+        height: 80vmin;
+        width: 80vmin;
+        gap: 2vmin;
+    }
+
+    .box {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 10vmin;
+    }
+
+    #reset, #new-game {
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+    #win {
+        font-size: 6vmin;
+    }
+
+    h1 {
+        font-size: 4vmin;
+    }
+
+    img {
+        height: 80px;
+        width: 100px;
+    }
+}
+
+/* Media Query for smaller mobile devices */
+@media (max-width: 480px) {
+    .container {
+        height: 100vh;
+        gap: 3vmin;
+    }
+
+    .game {
+        height: 90vmin;
+        width: 90vmin;
+        gap: 3vmin;
+    }
+
+    .box {
+        height: 25vmin;
+        width: 25vmin;
+        font-size: 12vmin;
+    }
+
+    #reset, #new-game {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    #win {
+        font-size: 7vmin;
+    }
+
+    h1 {
+        font-size: 3vmin;
+    }
+
+    img {
+        height: 60px;
+        width: 80px;
+    }
+}
